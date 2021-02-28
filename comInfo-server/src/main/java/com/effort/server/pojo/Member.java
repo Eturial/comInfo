@@ -22,7 +22,7 @@ import java.io.Serializable;
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-@TableName("t_member")
+@TableName(value = "t_member", resultMap = "MemberBaseResultMap")
 @ApiModel(value="Member对象", description="")
 public class Member implements Serializable {
 
@@ -31,20 +31,20 @@ public class Member implements Serializable {
     @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
 
-    private Integer race;
+    private Race race;
 
     @TableField("project_name")
     private String projectName;
 
-    private Integer member1;
+    private User member1;
 
-    private Integer member2;
+    private User member2;
 
-    private Integer member3;
+    private User member3;
 
-    private Integer member4;
+    private User member4;
 
-    private Integer member5;
+    private User member5;
 
 
 }

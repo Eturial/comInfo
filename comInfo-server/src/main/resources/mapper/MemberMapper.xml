@@ -5,13 +5,13 @@
     <!-- 通用查询映射结果 -->
     <resultMap id="BaseResultMap" type="com.effort.server.pojo.Member">
         <id column="id" property="id" />
-        <result column="race" property="race" />
         <result column="project_name" property="projectName" />
-        <result column="member1" property="member1" />
-        <result column="member2" property="member2" />
-        <result column="member3" property="member3" />
-        <result column="member4" property="member4" />
-        <result column="member5" property="member5" />
+        <association column="race" property="race" select="com.effort.server.mapper.RaceMapper.selectById"/>
+        <association column="member1" property="member1" select="com.effort.server.mapper.MemberMapper.selectById" />
+        <association column="member2" property="member2" select="com.effort.server.mapper.MemberMapper.selectById" />
+        <association column="member3" property="member3" select="com.effort.server.mapper.MemberMapper.selectById" />
+        <association column="member4" property="member4" select="com.effort.server.mapper.MemberMapper.selectById" />
+        <association column="member5" property="member5" select="com.effort.server.mapper.MemberMapper.selectById" />
     </resultMap>
 
     <!-- 通用查询结果列 -->

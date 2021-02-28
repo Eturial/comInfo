@@ -3,14 +3,14 @@
 <mapper namespace="com.effort.server.mapper.UserMapper">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="com.effort.server.pojo.User">
+    <resultMap id="UserBaseResultMap" type="com.effort.server.pojo.User">
         <id column="id" property="id" />
         <result column="account" property="account" />
         <result column="password" property="password" />
         <result column="name" property="name" />
         <result column="gender" property="gender" />
-        <result column="school" property="school" />
-        <result column="permission" property="permission" />
+        <association column="school" property="school" select="com.effort.server.mapper.SchoolMapper.selectById" />
+        <association column="permission" property="permission" select="com.effort.server.mapper.RoleMapper.selectById"/>
     </resultMap>
 
     <!-- 通用查询结果列 -->

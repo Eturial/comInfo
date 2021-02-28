@@ -9,8 +9,6 @@ import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.security.core.userdetails.UsernameNotFoundException;
 
 import java.io.Serializable;
 import java.util.Collection;
@@ -26,7 +24,7 @@ import java.util.Collection;
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-@TableName("t_user")
+@TableName(value = "t_user", resultMap = "UserMemberResultMap")
 @ApiModel(value="User对象", description="")
 public class User implements Serializable, UserDetails {
 
@@ -43,9 +41,9 @@ public class User implements Serializable, UserDetails {
 
     private Boolean gender;
 
-    private String school;
+    private School school;
 
-    private String permission;
+    private Role permission;
 
 
     @Override
