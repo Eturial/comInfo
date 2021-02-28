@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.effort.server.mapper.MemberMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.effort.server.pojo.Member">
+        <id column="id" property="id" />
+        <result column="race" property="race" />
+        <result column="project_name" property="projectName" />
+        <result column="member1" property="member1" />
+        <result column="member2" property="member2" />
+        <result column="member3" property="member3" />
+        <result column="member4" property="member4" />
+        <result column="member5" property="member5" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, race, project_name, member1, member2, member3, member4, member5
+    </sql>
+
+</mapper>
