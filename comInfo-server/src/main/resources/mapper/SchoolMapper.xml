@@ -13,4 +13,16 @@
         id, school
     </sql>
 
+    <insert id="addSchool" parameterType="string">
+        insert into t_school(school) value(#{school})
+    </insert>
+
+    <!--获取所有学校-->
+    <select id="getSchools" resultType="com.effort.server.pojo.School">
+        select * from t_school s where s.id in
+        <foreach collection="list" item="school" index="index" open="(" close=")" separator=",">
+            #{school}
+        </foreach>
+    </select>
+
 </mapper>

@@ -1,7 +1,7 @@
 package com.effort.server.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.effort.server.pojo.Member;
+import com.effort.server.pojo.Prize;
 import org.apache.ibatis.annotations.Mapper;
 
 /**
@@ -10,9 +10,9 @@ import org.apache.ibatis.annotations.Mapper;
  * </p>
  *
  * @author 86137
- * @since 2021-02-21
+ * @since 2021-03-02
  */
 @Mapper
-public interface MemberMapper extends BaseMapper<Member> {
+public interface PrizeMapper extends BaseMapper<Prize> {
 
 }

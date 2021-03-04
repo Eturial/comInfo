@@ -9,13 +9,17 @@
         <result column="password" property="password" />
         <result column="name" property="name" />
         <result column="gender" property="gender" />
-        <association column="school" property="school" select="com.effort.server.mapper.SchoolMapper.selectById" />
-        <association column="permission" property="permission" select="com.effort.server.mapper.RoleMapper.selectById"/>
+<!--        <association column="school" property="school" select="com.effort.server.mapper.SchoolMapper.selectById" />-->
+<!--        <association column="permission" property="permission" select="com.effort.server.mapper.RoleMapper.selectById"/>-->
     </resultMap>
 
     <!-- 通用查询结果列 -->
     <sql id="Base_Column_List">
         id, account, password, name, gender, school, permission
     </sql>
+
+    <select id="getUsers" resultType="com.effort.server.pojo.User">
+
+    </select>
 
 </mapper>

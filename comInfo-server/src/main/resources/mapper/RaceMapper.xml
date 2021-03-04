@@ -5,7 +5,7 @@
     <!-- 通用查询映射结果 -->
     <resultMap id="BaseResultMap" type="com.effort.server.pojo.Race">
         <id column="id" property="id" />
-        <result column="_name" property="name" />
+        <result column="name" property="name" />
         <result column="start_time" property="startTime" />
         <result column="end_time" property="endTime" />
         <result column="status" property="status" />
@@ -15,5 +15,10 @@
     <sql id="Base_Column_List">
         id, _name, start_time, end_time, status
     </sql>
+
+    <insert id="addRace" parameterType="com.effort.server.pojo.Race">
+        insert into t_race(name, status, start_time, end_time)
+        values(#{name}, #{status}, #{startTime}, #{endTime})
+    </insert>
 
 </mapper>

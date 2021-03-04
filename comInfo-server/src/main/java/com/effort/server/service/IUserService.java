@@ -5,6 +5,7 @@ import com.effort.server.pojo.RespBean;
 import com.effort.server.pojo.User;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.List;
 
 
 /**
@@ -38,4 +39,10 @@ public interface IUserService extends IService<User> {
      * @param user
      */
     RespBean register(User user, HttpServletRequest request);
+
+    /**
+     * 获取用户
+     * @return
+     */
+    List<User> getUsers();
 }

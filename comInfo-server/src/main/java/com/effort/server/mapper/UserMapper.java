@@ -5,6 +5,8 @@ import com.effort.server.pojo.User;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Component;
 
+import java.util.List;
+
 /**
  * <p>
  *  Mapper 接口
@@ -16,4 +18,5 @@ import org.springframework.stereotype.Component;
 @Mapper
 public interface UserMapper extends BaseMapper<User> {
 
+    List<User> getUsers();
 }

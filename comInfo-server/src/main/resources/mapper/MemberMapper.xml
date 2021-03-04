@@ -14,9 +14,6 @@
         <association column="member5" property="member5" select="com.effort.server.mapper.MemberMapper.selectById" />
     </resultMap>
 
-    <!-- 通用查询结果列 -->
-    <sql id="Base_Column_List">
-        id, race, project_name, member1, member2, member3, member4, member5
-    </sql>
+
 
 </mapper>

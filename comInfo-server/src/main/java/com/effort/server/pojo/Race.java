@@ -32,7 +32,7 @@ public class Race implements Serializable {
     @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
 
-    @TableField("_name")
+    @TableField("name")
     private String name;
 
     @TableField("start_time")
