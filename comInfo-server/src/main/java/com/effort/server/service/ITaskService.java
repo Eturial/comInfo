@@ -19,9 +19,9 @@ public interface ITaskService extends IService<Task> {
 
     Task getTask(Integer projectId, Integer userId);
 
-    Task updateTask(Integer projectId, Integer userId);
+//    Task updateTask(Integer projectId, Integer userId);
 
     void addTask(Task task);
 
-    void deleteTasks(Integer projectId, Integer userId);
+//    void deleteTasks(Integer projectId, Integer userId);
 }

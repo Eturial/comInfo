@@ -21,9 +21,9 @@ public interface IMemberService extends IService<Member> {
 
     RespBean deleteMember(Integer id, int number);
 
-    RespBean deleteTeam(Integer id);
+//    RespBean deleteTeam(Integer id);
 
     RespBean addTeam(Member member);
 
-    RespBean updateTeam(Integer id);
+//    RespBean updateTeam(Integer id);
 }

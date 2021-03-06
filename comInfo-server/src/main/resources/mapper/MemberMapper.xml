@@ -2,8 +2,8 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.effort.server.mapper.MemberMapper">
 
-    <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="com.effort.server.pojo.Member">
+<!--     通用查询映射结果 -->
+    <resultMap id="MemberBaseResultMap" type="com.effort.server.pojo.Member">
         <id column="id" property="id" />
         <result column="project_name" property="projectName" />
         <association column="race" property="race" select="com.effort.server.mapper.RaceMapper.selectById"/>

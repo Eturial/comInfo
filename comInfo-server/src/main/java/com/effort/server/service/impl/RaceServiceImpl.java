@@ -43,9 +43,9 @@ public class RaceServiceImpl extends ServiceImpl<RaceMapper, Race> implements IR
         return RespBean.success("添加成功", race);
     }
 
-    @Override
-    public RespBean deleteRace(Integer id) {
-        raceMapper.deleteById(id);
-        return RespBean.success("删除成功");
-    }
+//    @Override
+//    public RespBean deleteRace(Integer id) {
+//        raceMapper.deleteById(id);
+//        return RespBean.success("删除成功");
+//    }
 }

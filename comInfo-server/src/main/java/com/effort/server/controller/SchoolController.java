@@ -37,11 +37,11 @@ public class SchoolController {
         return schoolService.getSchools();
     }
 
-    @ApiOperation(value = "修改学校")
-    @PostMapping("/school/{id}")
-    public RespBean updateSchool(@PathVariable("id") Integer id, String school) {
-        return schoolService.setSchool(id, school);
-    }
+//    @ApiOperation(value = "修改学校")
+//    @PostMapping("/school/{id}")
+//    public RespBean updateSchool(@PathVariable("id") Integer id, String school) {
+//        return schoolService.setSchool(id, school);
+//    }
 
     @ApiOperation(value = "新增学校")
     @PutMapping("/school")
@@ -49,10 +49,10 @@ public class SchoolController {
         return schoolService.addSchool(school);
     }
 
-    @ApiOperation(value = "删除学校")
-    @PostMapping("/school/{id}")
-    public RespBean deleteSchool(@PathVariable("id") Integer id) {
-        return schoolService.deleteSchool(id);
-    }
+//    @ApiOperation(value = "删除学校")
+//    @PostMapping("/school/{id}")
+//    public RespBean deleteSchool(@PathVariable("id") Integer id) {
+//        return schoolService.deleteSchool(id);
+//    }
 
 }

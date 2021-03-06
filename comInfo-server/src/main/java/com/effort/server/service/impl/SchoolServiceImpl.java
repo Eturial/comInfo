@@ -51,11 +51,11 @@ public class SchoolServiceImpl extends ServiceImpl<SchoolMapper, School> impleme
      * @param id
      * @return
      */
-    @Override
-    public RespBean deleteSchool(Integer id) {
-        schoolMapper.deleteById(id);
-        return RespBean.success("删除成功");
-    }
+//    @Override
+//    public RespBean deleteSchool(Integer id) {
+//        schoolMapper.deleteById(id);
+//        return RespBean.success("删除成功");
+//    }
 
     /**
      * 修改学校
@@ -63,11 +63,11 @@ public class SchoolServiceImpl extends ServiceImpl<SchoolMapper, School> impleme
      * @param school
      * @return
      */
-    @Override
-    public RespBean setSchool(Integer id, String school) {
-        schoolMapper.selectById(id).setSchool(school);
-        return RespBean.success("修改成功");
-    }
+//    @Override
+//    public RespBean setSchool(Integer id, String school) {
+//        schoolMapper.selectById(id).setSchool(school);
+//        return RespBean.success("修改成功");
+//    }
 
 
 }

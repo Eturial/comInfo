@@ -36,12 +36,12 @@ public interface ISchoolService extends IService<School> {
      * @param id
      * @return
      */
-    RespBean deleteSchool(Integer id);
+//    RespBean deleteSchool(Integer id);
 
     /**
      * 修改学校
      * @param school
      * @return
      */
-    RespBean setSchool(Integer id, String school);
+//    RespBean setSchool(Integer id, String school);
 }

@@ -46,16 +46,16 @@ public class MemberController {
         return memberService.deleteMember(id, number);
     }
 
-    @ApiOperation(value = "删除组")
-    @PostMapping("/member/{id}")
-    public RespBean deleteTeam(@PathVariable("id") Integer id) {
-        return memberService.deleteTeam(id);
-    }
+//    @ApiOperation(value = "删除组")
+//    @PostMapping("/member/{id}")
+//    public RespBean deleteTeam(@PathVariable("id") Integer id) {
+//        return memberService.deleteTeam(id);
+//    }
 
-    @ApiOperation(value = "修改组")
-    @PostMapping("/member/{id}")
-    public RespBean updateTeam(@PathVariable("id") Integer id) {
-        return memberService.updateTeam(id);
-    }
+//    @ApiOperation(value = "修改组")
+//    @PostMapping("/member/{id}")
+//    public RespBean updateTeam(@PathVariable("id") Integer id) {
+//        return memberService.updateTeam(id);
+//    }
 
 }

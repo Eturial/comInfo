@@ -30,20 +30,20 @@ public class TaskServiceImpl extends ServiceImpl<TaskMapper, Task> implements IT
         return taskMapper.selectTask(projectId, userId);
     }
 
-    @Override
-    public Task updateTask(Integer projectId, Integer userId) {
-        Task task = getTask(projectId, userId);
-        taskMapper.updateById(task);
-        return task;
-    }
+//    @Override
+//    public Task updateTask(Integer projectId, Integer userId) {
+//        Task task = getTask(projectId, userId);
+//        taskMapper.updateById(task);
+//        return task;
+//    }
 
     @Override
     public void addTask(Task task) {
         taskMapper.insert(task);
     }
 
-    @Override
-    public void deleteTasks(Integer projectId, Integer userId) {
-        taskMapper.deleteTask(projectId, userId);
-    }
+//    @Override
+//    public void deleteTasks(Integer projectId, Integer userId) {
+//        taskMapper.deleteTask(projectId, userId);
+//    }
 }

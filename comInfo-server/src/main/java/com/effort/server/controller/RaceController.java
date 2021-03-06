@@ -45,9 +45,9 @@ public class RaceController {
         return raceService.addRace(name, status, start_time, end_time);
     }
 
-    @ApiOperation(value = "删除比赛")
-    @PostMapping("/race/{id}")
-    public RespBean deleteRace(@PathVariable Integer id) {
-        return raceService.deleteRace(id);
-    }
+//    @ApiOperation(value = "删除比赛")
+//    @PostMapping("/race/{id}")
+//    public RespBean deleteRace(@PathVariable Integer id) {
+//        return raceService.deleteRace(id);
+//    }
 }

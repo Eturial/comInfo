@@ -42,5 +42,5 @@ public interface IRaceService extends IService<Race> {
      * @param id
      * @return
      */
-    RespBean deleteRace(Integer id);
+//    RespBean deleteRace(Integer id);
 }

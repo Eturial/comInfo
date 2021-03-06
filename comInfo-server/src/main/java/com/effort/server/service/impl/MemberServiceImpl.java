@@ -49,11 +49,11 @@ public class MemberServiceImpl extends ServiceImpl<MemberMapper, Member> impleme
 
     }
 
-    @Override
-    public RespBean deleteTeam(Integer id) {
-        memberMapper.deleteById(id);
-        return RespBean.success("删除成功");
-    }
+//    @Override
+//    public RespBean deleteTeam(Integer id) {
+//        memberMapper.deleteById(id);
+//        return RespBean.success("删除成功");
+//    }
 
     @Override
     public RespBean addTeam(Member member) {
@@ -61,9 +61,9 @@ public class MemberServiceImpl extends ServiceImpl<MemberMapper, Member> impleme
         return RespBean.success("添加成功");
     }
 
-    @Override
-    public RespBean updateTeam(Integer id) {
-        memberMapper.updateById(memberMapper.selectById(id));
-        return RespBean.success("修改成功");
-    }
+//    @Override
+//    public RespBean updateTeam(Integer id) {
+//        memberMapper.updateById(memberMapper.selectById(id));
+//        return RespBean.success("修改成功");
+//    }
 }

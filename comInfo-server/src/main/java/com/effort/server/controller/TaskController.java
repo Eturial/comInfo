@@ -33,12 +33,12 @@ public class TaskController {
         return taskService.getTask(projectId, userId);
     }
 
-    @ApiOperation(value = "修改小组任务")
-    @PostMapping("/task/{project_id}/{user_id}")
-    public RespBean updateTasks(@PathVariable("project_id") Integer projectId, @PathVariable("user_id") Integer userId) {
-        taskService.updateTask(projectId, userId);
-        return RespBean.success("修改成功");
-    }
+//    @ApiOperation(value = "修改小组任务")
+//    @PostMapping("/task/{project_id}/{user_id}")
+//    public RespBean updateTasks(@PathVariable("project_id") Integer projectId, @PathVariable("user_id") Integer userId) {
+//        taskService.updateTask(projectId, userId);
+//        return RespBean.success("修改成功");
+//    }
 
     @ApiOperation(value = "新增小组任务")
     @PutMapping("/task")
@@ -47,10 +47,10 @@ public class TaskController {
         return RespBean.success("添加成功");
     }
 
-    @ApiOperation(value = "删除小组任务")
-    @PostMapping("/task/{project_id}/{user_id}")
-    public RespBean deleteTasks(@PathVariable("project_id") Integer projectId, @PathVariable("user_id") Integer userId) {
-        taskService.deleteTasks(projectId, userId);
-        return RespBean.success("删除成功");
-    }
+//    @ApiOperation(value = "删除小组任务")
+//    @PostMapping("/task/{project_id}/{user_id}")
+//    public RespBean deleteTasks(@PathVariable("project_id") Integer projectId, @PathVariable("user_id") Integer userId) {
+//        taskService.deleteTasks(projectId, userId);
+//        return RespBean.success("删除成功");
+//    }
 }
