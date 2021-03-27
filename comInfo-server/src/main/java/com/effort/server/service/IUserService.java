@@ -3,6 +3,7 @@ package com.effort.server.service;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.effort.server.pojo.RespBean;
 import com.effort.server.pojo.User;
+import org.springframework.stereotype.Service;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
@@ -16,6 +17,7 @@ import java.util.List;
  * @author 86137
  * @since 2021-02-21
  */
+@Service
 public interface IUserService extends IService<User> {
 
     /**

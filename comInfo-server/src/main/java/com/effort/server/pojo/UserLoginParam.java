@@ -17,8 +17,8 @@ import lombok.experimental.Accessors;
 @Accessors(chain = true)
 @ApiModel(value = "UserLogin对象", description = "")
 public class UserLoginParam {
-    @ApiModelProperty(value = "用户名", required = true)
-    private String username;
+    @ApiModelProperty(value = "学号", required = true)
+    private int id;
     @ApiModelProperty(value = "密码", required = true)
     private String password;
 }

@@ -1,11 +1,8 @@
 package com.effort.server.controller;
 
 
-import com.effort.server.pojo.RespBean;
-import com.effort.server.pojo.School;
 import com.effort.server.pojo.User;
 import com.effort.server.service.IUserService;
-import com.effort.server.service.impl.UserServiceImpl;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -42,6 +42,4 @@ public class Race implements Serializable {
     private LocalDateTime endTime;
 
     private String status;
-
-
 }

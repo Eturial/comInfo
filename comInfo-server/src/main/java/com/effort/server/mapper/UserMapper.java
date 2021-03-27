@@ -2,6 +2,7 @@ package com.effort.server.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.effort.server.pojo.User;
+import com.effort.server.pojo.UserLoginParam;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Component;
 
@@ -19,4 +20,8 @@ import java.util.List;
 public interface UserMapper extends BaseMapper<User> {
 
     List<User> getUsers();
+
+    User getUserByPassword(UserLoginParam user);
+
+    User getUserById(long id);
 }
